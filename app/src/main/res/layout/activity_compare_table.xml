@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CompareTableActivity">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Offer Comparasion"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTextView"
+            app:layout_constraintBottom_toTopOf="@id/backToMainBtn"
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintHeight_percent="0.65">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:gravity="center"
+                android:stretchColumns="*">
+
+                <!-- Table Header -->
+                <TableRow>
+                    <TextView
+                        android:layout_weight="40"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="Detail"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/offer1Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="Offer1"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/offer2Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="Offer2"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+                </TableRow>
+
+                <!-- Table Row -->
+                <TableRow>
+                    <TextView
+                        android:layout_weight="40"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="Title"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/titleOffer1Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/titleOffer2Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="40"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="Company"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/companyOffer1Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/companyOffer2Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="40"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="City"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/cityOffer1Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/cityOffer2Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="40"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="State"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/stateOffer1Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/stateOffer2Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="40"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="Yearly Adjusted Salary"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/salaryOffer1Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/salaryOffer2Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="40"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="Yearly Adjusted Bonus"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/bonusOffer1Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/bonusOffer2Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="40"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="Number of Stock Option"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/optionOffer1Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/optionOffer2Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="40"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="Home Buying Program Fund"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/hbpOffer1Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/hbpOffer2Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="40"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="Personal Choice Holiday"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/holidayOffer1Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/holidayOffer2Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_weight="40"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="Monthly Internet Stipend"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/stipendOffer1Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/stipendOffer2Text"
+                        android:layout_weight="30"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/textview_border"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:text="test"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+
+            </TableLayout>
+
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/backToMainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Main Menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85" />
+
+        <Button
+            android:id="@+id/compareBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Compare Others"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/backToMainBtn"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/backToMainBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
