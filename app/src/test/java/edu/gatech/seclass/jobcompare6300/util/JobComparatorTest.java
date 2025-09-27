@@ -58,5 +58,6 @@ public class JobComparatorTest extends TestCase {
 
         // The job2 has higher scores than job1.
         assertEquals(comparator.compare(job2, job1), 1);
+        assertEquals(comparator.compare(job1, job2), 0);
     }
 }
